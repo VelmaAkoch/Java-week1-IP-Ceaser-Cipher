@@ -7,6 +7,19 @@ public class DecryptCipher {
         this.key = 26 - key;
     }
 
+    public String getText() {
+        return this.text;
+    }
 
+    public void setText(String text){
+        this.text = text;
+    }
 
+    public int getKey() {
+        return this.key;
+    }
+
+    public void setKey(int key) {
+        this.key = key;
+    }
 }
