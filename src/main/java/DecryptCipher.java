@@ -26,6 +26,8 @@ public class DecryptCipher {
     public StringBuffer decrypt(){
         StringBuffer r=new StringBuffer();
 
+        for (int i=0; i<this.text.length(); i++)
+
 
     }
 }
