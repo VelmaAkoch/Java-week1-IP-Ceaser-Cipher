@@ -30,6 +30,16 @@ public class DecryptCipher {
         {
             if (Character.isLetter(this.text.charAt(i))){
                 if (Character.isUpperCase(this.text.charAt(i)))
+                {
+                    if (this.text.charAt(i) == ' '){
+                        r.append(' ');
+                    }
+                    else{
+                        char ch = (char)(((int)this.text.charAt(i) +
+                                this.key - 65) % 26 + 65);
+                        r.append(ch);
+                    }
+                }
             }
         }
 
