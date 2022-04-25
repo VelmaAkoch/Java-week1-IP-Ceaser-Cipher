@@ -28,7 +28,9 @@ public class DecryptCipher {
 
         for (int i=0; i<this.text.length(); i++)
         {
-            if (Character.isLetter(this.text.charAt(i)))
+            if (Character.isLetter(this.text.charAt(i))){
+                if (Character.isUpperCase(this.text.charAt(i)))
+            }
         }
 
 
