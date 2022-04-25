@@ -40,6 +40,17 @@ public class DecryptCipher {
                         r.append(ch);
                     }
                 }
+                else
+                {
+                    if(this.text.charAt(i) == ' '){
+                        r.append(' ');
+                    }
+                    else {
+                        char ch = (char) (((int) this.text.charAt(i) +
+                                this.key -97) % 26 + 97);
+                        r.append(ch);
+                    }
+                }
             }
         }
 
