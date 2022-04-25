@@ -22,4 +22,10 @@ public class DecryptCipher {
     public void setKey(int key) {
         this.key = key;
     }
+
+    public StringBuffer decrypt(){
+        StringBuffer r=new StringBuffer();
+
+
+    }
 }
