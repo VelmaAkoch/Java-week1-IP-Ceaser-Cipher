@@ -6,7 +6,9 @@ public class EncryptCipherTest {
     @Test
     public void encryptedCharacter_returnsCharPlusTwoPosition() {
         EncryptCipher encoding= new EncryptCipher();
+        encoding.setC('C');
+        encoding.setKey(2);
         Character expected = 'E';
-        assertEquals(expected, encoding.encryptCharacter('C'));
+        assertEquals(expected, encoding.encrypt());
     }
 }
