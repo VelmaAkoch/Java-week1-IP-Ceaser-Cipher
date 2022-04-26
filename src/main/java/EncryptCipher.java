@@ -13,6 +13,30 @@ public class EncryptCipher {
         this.c = c;
         this.key = key;
     }
+
+    public Character[] getAlphabet() {
+        return alphabet;
+    }
+
+    public void setAlphabet(Character[] alphabet) {
+        this.alphabet = alphabet;
+    }
+
+    public char getC() {
+        return c;
+    }
+
+    public void setC(char c) {
+        this.c = c;
+    }
+
+    public int getKey() {
+        return key;
+    }
+
+    public void setKey(int key) {
+        this.key = key;
+    }
 }
 
 
