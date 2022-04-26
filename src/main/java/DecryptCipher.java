@@ -11,6 +11,11 @@ public class DecryptCipher {
 
     }
 
+    public DecryptCipher(char c, int key) {
+        this.c = c;
+        this.key = key
+    }
+
 
 
 
