@@ -11,4 +11,10 @@ public class EncryptCipherTest {
         Character expected = 'E';
         assertEquals(expected, encoding.encrypt());
     }
+
+
+
+
+
+
 }
