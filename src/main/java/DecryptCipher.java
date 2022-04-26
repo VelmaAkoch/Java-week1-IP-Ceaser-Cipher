@@ -42,8 +42,9 @@ public class DecryptCipher {
 
     public char decrypt() {
         int index = Arrays.asList(alphabet).indexOf(c);
-        int newIndex = (index - key) % 26%;
+        int newIndex = (index - key) % 26;
         return alphabet[newIndex];
     }
 
 }
+
