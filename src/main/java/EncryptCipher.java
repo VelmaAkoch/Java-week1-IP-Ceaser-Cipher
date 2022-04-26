@@ -8,6 +8,11 @@ public class EncryptCipher {
 
     public EncryptCipher() {
     }
+
+    public EncryptCipher(char c, int key) {
+        this.c = c;
+        this.key = key;
+    }
 }
 
 
