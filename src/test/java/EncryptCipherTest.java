@@ -42,6 +42,14 @@ public class EncryptCipherTest {
         assertEquals('1', encoding.encrypt());
     }
 
+    @Test
+    public void encryptLowercase(){
+        EncryptCipher encoding = new EncryptCipher();
+        encoding.setC('a');
+        encoding.setKey(2);
+        assertEquals('C', encoding.encrypt());
+    }
+
 
 
 
