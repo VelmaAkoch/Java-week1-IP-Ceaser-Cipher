@@ -35,5 +35,13 @@ public class DecryptCipherTest {
         assertEquals(' ', encoding.decrypt());
     }
 
+    @Test
+    public void decryptNumber(){
+        DecryptCipher encoding = new DecryptCipher();
+        encoding.setC('1');
+        encoding.setKey(2);
+        assertEquals('1', encoding.decrypt());
+    }
+
 
 }
