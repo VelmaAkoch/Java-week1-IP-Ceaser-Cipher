@@ -27,5 +27,13 @@ public class DecryptCipherTest {
         assertEquals("THE QUICK BROWN FOX", decryptedText);
     }
 
+    @Test
+    public void decryptSpace(){
+        DecryptCipher encoding = new DecryptCipher();
+        encoding.setC(' ');
+        encoding.setKey(2);
+        assertEquals(' ', encoding.decrypt());
+    }
+
 
 }
