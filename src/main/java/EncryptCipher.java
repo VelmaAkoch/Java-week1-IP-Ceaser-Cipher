@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 public class EncryptCipher {
+
     Character[] alphabet = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',};
 
     private char c;
@@ -27,7 +28,7 @@ public class EncryptCipher {
     }
 
     public void setC(char c) {
-        this.c = c;
+        this.c = Character.toUpperCase(c);
     }
 
     public int getKey() {
@@ -41,11 +42,16 @@ public class EncryptCipher {
     public char encrypt() {
         int index = Arrays.asList(alphabet).indexOf(c);
         int newIndex = (index + key) % 26;
-        return alphabet[newIndex];
+        //check for spaces and special characters
+        if (c==' '){
+            return ' ';
+        }
+        //Check for numbers
+        if (c >= '0' && c <='9') {
+            return c;
+        }
 
     }
 
+
 }
-
-
-
