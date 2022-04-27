@@ -61,7 +61,7 @@ public class DecryptCipher {
             return  c;
         }
 
-        return alphabet[newIndex]
+        return alphabet[newIndex];
 
     }
 

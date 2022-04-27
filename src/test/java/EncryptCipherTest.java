@@ -26,6 +26,14 @@ public class EncryptCipherTest {
         assertEquals("VJG SWKEM DTQYP HQZ", encryptedText);
     }
 
+     @Test
+    public void encryptSpace(){
+        EncryptCipher encoding = new EncryptCipher();
+        encoding.setC(' ');
+        encoding.setKey(2);
+        assertEquals(' ', encoding.encrypt());
+    }
+
 
 
 

@@ -42,15 +42,15 @@ public class EncryptCipher {
     public char encrypt() {
         int index = Arrays.asList(alphabet).indexOf(c);
         int newIndex = (index + key) % 26;
-        //check for spaces and special characters
+
         if (c==' '){
             return ' ';
         }
-        //Check for numbers
+
         if (c >= '0' && c <='9') {
             return c;
         }
-        //if special characters return character
+
         if (c == '.' || c == ',' || c == '!' || c == '?' || c == ';' || c == ':' || c == '\'' || c == '\"' || c == '(' || c == ')' || c == '[' || c == ']' || c == '{' || c == '}' || c == '<' || c == '>' || c == '&' || c == '#' || c == '$' || c == '%' || c == '^' || c == '*' || c == '+' || c == '-' || c == '/' || c == '\\' || c == '|' || c == '=' || c == '_' || c == '~' || c == '`' || c == '@' || c == '.' || c == ',' || c == '!' || c == '?' || c == ';' || c == ':' || c == '\'' || c == '\"' || c == '(' || c == ')' || c == '[' || c == ']' || c == '{' || c == '}' || c == '<' || c == '>' || c == '&' || c == '#' || c == '$' || c == '%' || c == '^' || c == '*' || c == '+' || c == '-' || c == '/' || c == '\\' || c == '|' || c == '=' || c == '_' || c == '~' || c == '`') {
             return c;
         }
