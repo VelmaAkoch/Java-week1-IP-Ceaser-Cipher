@@ -13,8 +13,8 @@ public class EncryptCipherTest {
     }
 
     @Test
-    public void  encryptTest(){
-        String message = "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG";
+    public void  encryptText(){
+        String message = "THE QUICK BROWN FOX";
         String encryptedText = "";
 
         for(int i = 0; i < message.length(); i++) {
@@ -23,7 +23,7 @@ public class EncryptCipherTest {
             encoding.setKey(2);
             encryptedText += encoding.encrypt();
         }
-        assertEquals("VJG SWKEM DTQYP HQZ");
+        assertEquals("VJG SWKEM DTQYP HQZ", encryptedText);
     }
 
 

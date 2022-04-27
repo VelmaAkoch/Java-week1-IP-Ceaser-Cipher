@@ -39,9 +39,10 @@ public class App {
                 System.out.println("Your decrypted message is: "+output);
             }
 
-            else{
-                System.out.println("You should select 1 or 2");
-            }
+//            else
+//            {
+//                System.out.println("You should select 1 or 2");
+//            }
         }
     }
 }
