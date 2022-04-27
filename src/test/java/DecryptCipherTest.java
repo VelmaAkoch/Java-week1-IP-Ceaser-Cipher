@@ -43,5 +43,13 @@ public class DecryptCipherTest {
         assertEquals('1', encoding.decrypt());
     }
 
+    @Test
+    public void decryptLowercase(){
+        DecryptCipher encoding = new DecryptCipher();
+        encoding.setC('c');
+        encoding.setKey(2);
+        assertEquals('A', encoding.decrypt());
+    }
+
 
 }
