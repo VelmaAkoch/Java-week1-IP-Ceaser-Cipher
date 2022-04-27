@@ -13,5 +13,19 @@ public class DecryptCipherTest {
         assertEquals(expected, encoding.decrypt());
     }
 
+    @Test
+    public void decryptText(){
+        String message = "VJG SWKEM DTQYP HQZ";
+        String decryptedText = "";
+
+        for(int i = 0; i < message.length(); i++){
+            DecryptCipher encoding = new DecryptCipher();
+            encoding.setC(message.charAt(i));
+            encoding.setKey(2);
+            decryptedText += encoding.decrypt();
+        }
+        assertEquals("THE QUICK BROWN FOX", decryptedText);
+    }
+
 
 }
