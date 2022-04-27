@@ -34,6 +34,14 @@ public class EncryptCipherTest {
         assertEquals(' ', encoding.encrypt());
     }
 
+    @Test
+    public void encryptNumber(){
+        EncryptCipher encoding = new EncryptCipher();
+        encoding.setC('1');
+        encoding.setKey(2);
+        assertEquals('1', encoding.encrypt());
+    }
+
 
 
 
