@@ -12,6 +12,20 @@ public class EncryptCipherTest {
         assertEquals(expected, encoding.encrypt());
     }
 
+    @Test
+    public void  encryptTest(){
+        String message = "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG";
+        String encryptedText = "";
+
+        for(int i = 0; i < message.length(); i++) {
+            EncryptCipher encoding = new EncryptCipher();
+            encoding.setC(message.charAt(i));
+            encoding.setKey(2);
+            encryptedText += encoding.encrypt();
+        }
+        assertEquals("VJG SWKEM DTQYP HQZ");
+    }
+
 
 
 
