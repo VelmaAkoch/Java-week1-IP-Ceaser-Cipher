@@ -58,6 +58,15 @@ public class EncryptCipherTest {
         assertEquals('C', encoding.encrypt());
     }
 
+    @Test
+    public void encryptSpecial(){
+        EncryptCipher encoding = new EncryptCipher();
+        encoding.setC('!');
+        encoding.setKey(2);
+        assertEquals('!', encoding.encrypt());
+    }
+
+
 
 
 
