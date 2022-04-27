@@ -50,6 +50,14 @@ public class EncryptCipherTest {
         assertEquals('C', encoding.encrypt());
     }
 
+    @Test
+    public void encryptUppercase(){
+        EncryptCipher encoding = new EncryptCipher();
+        encoding.setC('A');
+        encoding.setKey(2);
+        assertEquals('C', encoding.encrypt());
+    }
+
 
 
 
