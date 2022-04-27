@@ -66,10 +66,12 @@ public class EncryptCipherTest {
         assertEquals('!', encoding.encrypt());
     }
 
-
-
-
-
-
+    @Test
+    public void encryptSpecial4(){
+        EncryptCipher encoding = new EncryptCipher();
+        encoding.setC('$');
+        encoding.setKey(2);
+        assertEquals('$', encoding.encrypt());
+    }
 
 }
