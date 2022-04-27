@@ -59,5 +59,15 @@ public class DecryptCipherTest {
         assertEquals('A', encoding.decrypt());
     }
 
+    @Test
+    public void decryptSpecial(){
+        DecryptCipher encoding = new DecryptCipher();
+        encoding.setC('!');
+        encoding.setKey(2);
+        assertEquals('!', encoding.decrypt());
+    }
+
+
+
 
 }
